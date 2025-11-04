@@ -30,14 +30,14 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.4",
-		"@astrojs/vercel": "^8.1.4",
+		"@astrojs/check": "0.9.5",
+		"@astrojs/vercel": "^9.0.0",
 		"@astropub/md": "^1.0.0",
 		"@fontsource-variable/inter": "^5.2.5",
 		"@fontsource-variable/josefin-sans": "^5.2.5",
 		"@fontsource-variable/urbanist": "^5.2.5",
 		"@konami-emoji-blast/astro": "^0.1.1",
-		"astro": "5.7.12",
+		"astro": "5.15.3",
 		"konami-emoji-blast": "^0.5.9",
 		"lodash": "^4.17.21",
 		"sharp": "^0.34.1",
@@ -77,9 +77,17 @@
 		"typescript-eslint": "^8.32.1"
 	},
 	"engines": {
-		"node": "20.11.0"
+		"node": ">=20.11.0"
 	},
 	"publishConfig": {
 		"provenance": true
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"allowedVersions": {
+				"@astrojs/markdown-remark": "6",
+				"astro": "5"
+			}
+		}
 	}
 }
